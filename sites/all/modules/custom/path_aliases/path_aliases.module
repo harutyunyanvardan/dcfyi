@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Path Aliases feature.
+ */
+
+include_once 'path_aliases.features.inc';

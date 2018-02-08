@@ -1,0 +1,98 @@
+#content ul.tabs.primary {
+  padding-left: 0;
+}
+
+#main-nav {
+  margin-bottom: 75px;
+}
+
+#main-nav > ul.menu {
+  font-size: 12px;
+  font-family: "LatoBlack";
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  > li {
+    padding-left: 30px;
+    margin: 0 0 14px 0;
+    line-height: 24px;
+    list-style-image: none;
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: #553119;
+    &:hover,
+    &.active {
+      color: #382010;
+    }
+  }
+}
+
+#main-nav li.dhtml-menu-open > a {
+  font-style: normal;
+}
+
+#main-nav > ul li.collapsed,
+#main-nav > ul li.leaf {
+  background: url("../images/nav-collapsed.png") no-repeat left 10px;
+}
+
+ul li.expanded,
+#main-nav > ul li.leaf.active-trail {
+  background: url("../images/nav-expanded.png") no-repeat left 10px;
+}
+
+#main-nav > ul.menu ul {
+  padding: 0;
+  margin: 0;
+  text-transform: none;
+  li.collapsed,
+  li.leaf,
+  li.expanded {
+    background: none;
+    font-size: 11px;
+    line-height: 18px;
+    padding-left: 0;
+    margin: 0;
+    list-style-image: none;
+    list-style-type: none;
+    text-transform: none;
+    li {
+      padding-left: 10px;
+    }
+  }
+  li.expanded {
+    li.leaf {
+      padding-left: 10px;
+    }
+  }
+}
+
+
+#secondary {
+  float: left;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  a {
+    color: $white;
+    text-decoration: none;
+    line-height: 47px;
+  }
+}
+
+#footer ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  line-height: 18px;
+  &.left {
+    margin-right: 35px;
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}

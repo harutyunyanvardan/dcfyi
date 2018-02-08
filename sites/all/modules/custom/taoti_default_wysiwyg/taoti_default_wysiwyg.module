@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Taoti: Default WYSIWYG feature.
+ */
+
+include_once 'taoti_default_wysiwyg.features.inc';

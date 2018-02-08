@@ -1,0 +1,15 @@
+name = Field Bases
+core = 7.x
+package = Features
+dependencies[] = addressfield
+dependencies[] = date
+dependencies[] = features
+dependencies[] = link
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_address
+features[field_base][] = field_event_date
+features[field_base][] = field_image_caption
+features[field_base][] = field_location
+features[field_base][] = field_registration
+project path = sites/all/modules/custom

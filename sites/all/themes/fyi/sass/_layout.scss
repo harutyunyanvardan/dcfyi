@@ -1,0 +1,121 @@
+.container {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  // @include showgrid();
+}
+
+#header,
+#footer {
+  background: url("../images/noise-brown.gif");
+  @include box-shadow();
+}
+
+#header {
+  margin: 25px 0;
+  .container {
+    height: 47px;
+    position: relative;
+    overflow: visible;
+  }
+}
+
+.page-civicrm #content { display: inline; float: left; margin-right: 0; width: 725px; padding-left: 225px; }
+
+.one-sidebar {
+  &.sidebar-first {
+    #content {
+      @include column(10, true);
+      @include prepend(3);
+    }
+    #sidebar-first {
+      @include column(3);
+      @include pull(13, true);
+      margin-top: 200px;
+    }
+  }
+}
+
+.two-sidebars {
+  #rotator {
+    display: inline;
+    float: left;
+    width: 725px;
+    margin: 0 0 20px 225px;
+    height: 290px;
+    background: #fff;
+    @include box-shadow();
+  }
+
+  #content {
+    display: inline;
+    float: left;
+    margin-right: 15px;
+    width: 485px;
+    padding-left: 225px;
+  }
+  #sidebar-first {
+    display: inline;
+    float: left;
+    /* == margin-left == #content: margin + width + padding */
+    margin: 200px 25px 0 -725px;
+    position: relative;
+    width: 200px;
+  }
+  #sidebar-second {
+    display: inline;
+    float: left;
+    margin-right: 0;
+    width: 225px;
+  }
+  &.front #sidebar-first {
+    margin-top: -110px;
+  }
+}
+* html #content,
+* html #sidebar-first,
+* html #sidebar-second {
+  overflow-x: hidden;
+}
+
+#content {
+  .inner {
+    background: #fbfcfb;
+    padding: 30px;
+    margin: 0 0 30px 0;
+    @include box-shadow();
+  }
+}
+
+#footer {
+  padding: 15px 0;
+  color: $white;
+  .container {
+    position: relative;
+  }
+  .block-1 {
+    @include column(5);
+  }
+  .block-2 {
+    @include column(5);
+  }
+  .block-3 {
+    @include column(3, true);
+  }
+  p.copyright {
+    font-size: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    margin: 0;
+  }
+}
+
+.block.address {
+  line-height: 18px;
+  margin-left: -25px;
+  em {
+    font-weight: bold;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,96 @@
+
+; Theme Info -----------------------------------------------------------------
+; required information about the theme
+
+name = DC FYI
+description = DC FYI is a custom theme based on Boron.
+core = 7.x
+base theme = boron
+engine = phptemplate
+
+; Stylesheets  ---------------------------------------------------------------
+; We use [screen] instead of [all] to avoid browser styles affecting
+; other media types. IE stylesheets are loaded through template.php
+
+; Normalize is added through css_alter
+;stylesheets[screen][] = css/normalize.css
+stylesheets[screen][] = css/lato/stylesheet.css
+stylesheets[screen][] = css/layout.css
+stylesheets[screen][] = css/styles.css
+
+; Module overrides
+stylesheets[screen][] = css/faq.css
+stylesheets[screen][] = css/twitter-pull-listing.css
+stylesheets[screen][] = css/facebook_pull.css
+stylesheets[screen][] = css/jquery.ui.tabs.css
+
+scripts[] = js/site.js
+
+exclude[css][] = 'modules/aggregator/aggregator.css'
+exclude[css][] = 'modules/block/block.css'
+exclude[css][] = 'modules/book/book.css'
+exclude[css][] = 'modules/comment/comment.css'
+exclude[css][] = 'modules/dblog/dblog.css'
+exclude[css][] = 'modules/file/file.css'
+exclude[css][] = 'modules/filter/filter.css'
+exclude[css][] = 'modules/forum/forum.css'
+exclude[css][] = 'modules/help/help.css'
+exclude[css][] = 'modules/menu/menu.css'
+exclude[css][] = 'modules/node/node.css'
+exclude[css][] = 'modules/openid/openid.css'
+exclude[css][] = 'modules/poll/poll.css'
+exclude[css][] = 'modules/search/search.css'
+exclude[css][] = 'modules/statistics/statistics.css'
+exclude[css][] = 'modules/syslog/syslog.css'
+;exclude[css][] = 'modules/system/admin.css'
+exclude[css][] = 'modules/system/maintenance.css'
+;exclude[css][] = 'modules/system/system.css'
+;exclude[css][] = 'modules/system/system.admin.css'
+;exclude[css][] = 'modules/system/system.base.css'
+exclude[css][] = 'modules/system/system.maintenance.css'
+;exclude[css][] = 'modules/system/system.menus.css'
+exclude[css][] = 'modules/system/system.messages.css'
+exclude[css][] = 'modules/system/system.theme.css'
+exclude[css][] = 'modules/taxonomy/taxonomy.css'
+exclude[css][] = 'modules/tracker/tracker.css'
+exclude[css][] = 'modules/update/update.css'
+exclude[css][] = 'modules/user/user.css'
+
+; Regions --------------------------------------------------------------------
+; these content regions are available for block placement
+
+; these are the stock regions
+regions[highlighted] = Highlighted
+regions[home_rotator] = Home Rotator
+regions[help] = Help
+
+regions[content] = Content
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+regions[footer] = Footer
+
+; special hidden (required) regions
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+
+; Options --------------------------------------------------------------------
+; these are the checkboxes that are available on the theme settings page.
+
+; these are the stock options
+; features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = comment_user_verification
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+; additional theme settings
+settings[breadcrumb_display]   = yes
+settings[breadcrumb_separator] = ' › '
+settings[breadcrumb_home]      = 1
+settings[breadcrumb_trailing]  = 0
+settings[breadcrumb_title]     = 0
+settings[boron_shim]           = 1

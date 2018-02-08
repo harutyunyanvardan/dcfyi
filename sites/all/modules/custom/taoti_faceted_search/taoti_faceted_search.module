@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Taoti: Faceted Search feature.
+ */
+
+include_once 'taoti_faceted_search.features.inc';

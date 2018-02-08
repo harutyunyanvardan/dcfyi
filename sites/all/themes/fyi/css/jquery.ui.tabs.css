@@ -1,0 +1,140 @@
+#fyi_tabs.ui-tabs {
+  margin: -20px;
+  border: 0;
+  color: #231f20;
+  padding: 0;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+/* Component containers
+----------------------------------*/
+.ui-widget { font-family: "LatoRegular";}
+.ui-widget .ui-widget { font-size: 1em; }
+#fyi_tabs.ui-widget-content { border: 0; background: none; color: #222222; }
+.ui-widget-content a { color: #5d9732; }
+.ui-widget-header { border: 0; background: none; color: #222222; font-weight: bold;}
+.ui-widget-header a { color: #222222;}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 0;
+  background: #c3cf21;
+  font-weight: normal;
+  color: #5d9731;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+  color: #5d9731;
+  text-decoration: none;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  border: 0;
+  background: #c3cf21;
+  font-weight: normal;
+  color: #212121;
+}
+.ui-state-hover a, .ui-state-hover a:hover {
+  color: #212121;
+  text-decoration: none;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+  border: 0;
+  background: #5d9731;
+  font-weight: normal;
+  color: #c3cf21;
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #c3cf21; text-decoration: none; }
+.ui-widget :active { outline: none; }
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #fcefa1/*{borderColorHighlight}*/; background: #fbf9ee/*{bgColorHighlight}*/ url(images/ui-bg_glass_55_fbf9ee_1x400.png)/*{bgImgUrlHighlight}*/ 50%/*{bgHighlightXPos}*/ 50%/*{bgHighlightYPos}*/ repeat-x/*{bgHighlightRepeat}*/; color: #363636/*{fcHighlight}*/; }
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #363636/*{fcHighlight}*/; }
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a/*{borderColorError}*/; background: #fef1ec/*{bgColorError}*/ url(images/ui-bg_glass_95_fef1ec_1x400.png)/*{bgImgUrlError}*/ 50%/*{bgErrorXPos}*/ 50%/*{bgErrorYPos}*/ repeat-x/*{bgErrorRepeat}*/; color: #cd0a0a/*{fcError}*/; }
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: #cd0a0a/*{fcError}*/; }
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #cd0a0a/*{fcError}*/; }
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { font-weight: bold; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+
+ul.social-feed { list-style-type: none; margin: 0; padding: 0; background: none; }
+ul.social-feed li { list-style-type: none; margin: 0 0 10px 0; padding: 0; }
+ul.social-feed .message { float: left; margin-right: 5px; margin-bottom: 2px; }
+
+/*
+ * jQuery UI Tabs 1.8.7
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+#fyi_tabs.ui-tabs .ui-tabs { position: relative; padding: .2em; zoom: 1; }
+#fyi_tabs.ui-tabs .ui-tabs-nav {background: none; margin: 0; padding: 0; border-bottom: 8px solid #5D9731; box-shadow: 0 2px 5px rgba(0,0,0,.2);}
+#fyi_tabs.ui-tabs .ui-tabs-nav li {
+  list-style: none;
+  float: left;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#fyi_tabs .ui-tabs-nav li a { padding: .5em 1em; text-decoration: none; display: block;}
+
+#fyi_tabs.ui-tabs .ui-tabs-nav a {
+  line-height: 42px;
+  text-align: center;
+  padding: 0 !important;
+  width: 112px;
+}
+
+#fyi_tabs .ui-tabs-nav a.fb {
+  width: 113px;
+}
+
+#fyi_tabs .ui-tabs-nav span {
+  display: inline-block;
+  background: url("../images/tabs-sm.png") no-repeat 0 0;
+  height: 0;
+  padding: 24px 0 0 0;
+  margin-bottom: -8px;
+  overflow: hidden;
+  width: 33px;
+}
+
+#fyi_tabs .ui-state-active span.twitter {
+  background-position: -33px 0;
+}
+
+#fyi_tabs span.fb {
+  background-position: 0 -24px;
+}
+
+#fyi_tabs .ui-state-active span.fb {
+  background-position: -33px -24px;
+}
+
+
+.ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; }
+.ui-tabs-nav li.ui-tabs-selected a,
+.ui-tabs-nav li.ui-state-disabled a,
+.ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs-nav li a,
+.ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; }
+.ui-tabs-panel {
+  background: #ffffff; display: block; border-width: 0; padding: 20px;
+}
+.ui-tabs-hide { display: none !important; }

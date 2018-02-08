@@ -1,0 +1,97 @@
+ol.faq-ul-questions-top {
+  padding-left: 0;
+  list-style-position: inside;
+}
+ol.faq-ul-questions-top a {
+  text-decoration: none;
+}
+
+.faq-category-indent {
+  padding-left: 20px;
+}
+
+.faq-more-link {
+  font-size: 0.85em;
+  margin-left: 30em;
+  margin-top: 0;
+  margin-bottom: -1.25em;
+  text-align: right;
+}
+
+.faq-top-link {
+  font-size: 0.8em;
+  margin-top:0;
+  margin-bottom: 0;
+  padding-bottom: 1.0em;
+}
+
+.faq-question {
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.faq-answer .faq-answer-label {
+  float: left;
+  margin-right: 0.5em;
+}
+
+.faq-dl-hide-answer {
+  padding-bottom: 15px;
+}
+
+img.faq-tax-image {
+  float: left;
+  padding: 0px 3px 0px 3px;
+}
+
+div.faq-detailed-question {
+  font-style: italic;
+}
+
+.faq .collapsible {
+	display: block;
+}
+
+.faq .collapsed {
+	display: none;
+}
+
+.faq #faq-expand-all {
+  text-align: right;
+  display: none;
+}
+.faq #faq-expand-all a.faq-expand-all-link,
+.faq #faq-expand-all a.faq-collapse-all-link {
+  display: none;
+}
+
+.node-faq-form {
+  background: #e0e0df;
+  margin: 0 -30px 1em;
+  padding: 1em 30px;
+  overflow: hidden;
+}
+
+.node-faq-form .form-item-title {
+  float: left;
+}
+.node-faq-form #edit-title {
+  background: #ececea;
+  font-family: "Lato";
+  font-size: 12px;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #402c05;
+  height: 14px;
+  padding: 10px 30px;
+  width: 290px;
+  margin: 0 15px 0 0;
+  border: 0;
+  -moz-box-shadow:    inset 0 0 10px #c0bfbf;
+  -webkit-box-shadow: inset 0 0 10px #c0bfbf;
+  box-shadow:         inset 0 0 10px #c0bfbf;
+}
+.node-faq-form .form-actions input {
+  float: left;
+  margin-top: 5px;
+}
